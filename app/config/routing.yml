@@ -3,5 +3,10 @@
 #    prefix:   /
 
 app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
+    # Configuración mapeos con anotaciones
+    # resource: "@AppBundle/Controller/"
+    # type:     annotation
+    
+    # Configuración yml
+    resource: "@AppBundle/Resources/config/routing.yml"
+    prefix:     /
