@@ -6,4 +6,5 @@ default_index:
 default_pruebas:
     path: /pruebas
     defaults: {_controller: "AppBundle:Default:pruebas"}
+#    defaults: {_controller: "default_pruebas:pruebasAction"}
     methods: GET
