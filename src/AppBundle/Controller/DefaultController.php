@@ -54,7 +54,8 @@ class DefaultController extends Controller
             $validate_email = $this->get("validator")->validate($email, $emailConstraint);
             
             if (count($validate_email) == 0 && $password !== NULL){
-                $signUp = $jwt_auth->signUp($email, $password, $getHash);
+                $pwd = hash('sha256', $password);
+                $signUp = $jwt_auth->signUp($email, $pwd, $getHash);
                 return new JsonResponse($signUp);
             } else {
                 return $helpers->json(array("status" => "error", "data" => "Login not valid!"));
