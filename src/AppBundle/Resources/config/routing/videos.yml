@@ -10,3 +10,27 @@ videos_edit:
     path: /edit/{id}
     defaults: {_controller: "AppBundle:Video:edit", id:null}
     methods: POST
+videos_upload_image:
+    path: /upload-image/{id}
+    defaults: {_controller: "AppBundle:Video:upload", id:null}
+    methods: POST
+videos_upload_video:
+    path: /upload-video/{id}
+    defaults: {_controller: "AppBundle:Video:upload", id:null}
+    methods: POST
+videos_list:
+    path: /list
+    defaults: {_controller: "AppBundle:Video:videos"}
+    methods: GET
+videos_last_videos:
+    path: /last-videos
+    defaults: {_controller: "AppBundle:Video:lastVideos"}
+    methods: GET
+videos_detail:
+    path: /detail/{id}
+    defaults: {_controller: "AppBundle:Video:video", id:null}
+    methods: GET
+videos_search:
+    path: /search/{search}
+    defaults: {_controller: "AppBundle:Video:search", id:null}
+    methods: GET
