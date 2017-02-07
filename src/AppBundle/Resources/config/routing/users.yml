@@ -10,3 +10,7 @@ users_upload_image:
     path: /upload-image
     defaults: {_controller: "AppBundle:User:uploadImage"}
     methods: POST
+users_channel:
+    path: /channel/{id}
+    defaults: {_controller: "AppBundle:User:channel", id:null}
+    methods: GET

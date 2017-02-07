@@ -10,3 +10,7 @@ app_users:
 app_videos:
     resource: "@AppBundle/Resources/config/routing/videos.yml" 
     prefix: /videos
+    
+app_comments:
+    resource: "@AppBundle/Resources/config/routing/comments.yml" 
+    prefix: /comments
